@@ -8,6 +8,7 @@ $("#currentDay").text(day);
 var currentHour = moment().hour();
 var tableBody = document.getElementById('tbody');
 var saveBtn = document.getElementById("saveBtn");
+var task = document.createElement("input");
 
 
 
@@ -21,14 +22,23 @@ for (var i = 0; i < 12; i++)
     var section1 = document.createElement("td");
     var section2 = document.createElement("td");
     var section3 = document.createElement("td");
-    section3.append(saveBtn);
 
     tr.appendChild(section1);
     tr.appendChild(section2);
     tr.appendChild(section3);
 
-
     section1.textContent = 1 + i + " AM";
+    section2.innerHTML = "<input></input>";
+    var buttonImage = document.createElement("img");
+    buttonImage.src = './assets/images/noun-save-2269969.png';
+    buttonImage.style = 'width: 25px; height: 25px;';
+    var saveBtn = document.createElement("button");
+    saveBtn.appendChild(buttonImage);
+    //saveBtn.innerHTML = "<img src='./assets/images/noun-save-2269969.png' style= 'width: 25px; height: 25px;'></img>"
+    section3.appendChild(saveBtn);
+
+    //section3.innerHTML = "<button><img src='./assets/images/noun-save-2269969.png' style= 'width: 25px; height: 25px;'></button>"
+
     if (i < (currentHour - 1))
     {
         section2.style.backgroundColor = "whitesmoke";
@@ -56,6 +66,9 @@ for (var i = 12; i < 24; i++)
     tr.appendChild(section3);
 
     section1.textContent = (1 + (i - 12)).toString() + " PM"
+    section2.innerHTML = "<input></input>";
+    section3.innerHTML = "<button><img src='./assets/images/noun-save-2269969.png' style= 'width: 25px; height: 25px;'></button>"
+
     if (i < (currentHour - 1))
     {
         section2.style.backgroundColor = "whitesmoke";
