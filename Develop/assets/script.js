@@ -24,8 +24,14 @@ function onSaveBtnClick(event)
     var task = thisInput.value;
 
     //if not empty, saves it to localstorage
+    //after starting the readme and believing that i was done, i realized some people might
+    //want to get rid of the tasks they completed, therefore wanting that section to remain blank
+    //but i'm hesistant about just getting rid of the if statement surrounding the local storage set
+    //though i do understand that that is all i need to do. so i'm leaving it for now, and i will play with 
+    //getting rid of that later
     if (task === "")
     {
+        localStorage.setItem(inputId.toString(), task);
     }
     else
     {
