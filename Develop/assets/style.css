@@ -63,13 +63,27 @@ button {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  height: 40px;
+  width: 80px;
 }
 
 button img {
   padding: 5px;
 }
 
-button i:hover {
+button:hover, i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+textarea {
+  background-color: rgb(255, 255, 255, 0);
+  height: 40px;
+  width: 100%;
+  border:rgb(255, 255, 255, 0) .5pt solid;
+}
+
+td {
+  margin: 0;
+  padding: 0;
 }
