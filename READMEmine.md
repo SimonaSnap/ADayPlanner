@@ -4,6 +4,14 @@ GitHub Deployed Page:
 
 Description:
 
+A Work Day planner
+ - Up top is the date, and also the day of the week
+ - there is a table with a row for each hour of the work day (set from 9 - 6)
+ - each row has the hour, a task section and a save button
+ - the task section will change color according to the day (gray = past, red = present, green = future)
+ - the user can select a task section to input a task, then click the save button to store that task
+ - at the end of the day, when currentHour = 24, storage is cleared and ready for the new day
+
 What I learned:
 
 Screenshot of Deployed Page:

@@ -99,7 +99,7 @@ for (var i = 8; i < 18; i++)
 
     //setting up the third section - the third column
     var buttonImage = document.createElement("img");
-    buttonImage.src = './assets/images/noun-save-2269969.png';
+    buttonImage.src = './Develop/assets/images/noun-save-2269969.png';
     buttonImage.style = 'width: 30px; height: 30px;';
     var saveBtn = document.createElement("button");
     //the id attribute set below is set to change with the i which is great cause then its unique
